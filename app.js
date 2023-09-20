@@ -107,15 +107,19 @@
 // console.log(array1)
 // console.log(newArray)
 
+// MATH SQUARE ROOT
 // let arr = [25,36,49,64,81]
-
 // let newArr = arr.map((CurElem) => Math.sqrt(CurElem) )
 // console.log(newArr)
 
-let arr1 = [2,3,4,6,8]
-let arr2 = arr1.map((CurElem) => CurElem*2).filter((CurElem) => CurElem > 10).reduce((accumalator,CurElem,index,arr) => { return accumalator += CurElem})
-console.log(arr2)
+// MAP+FILTER AND REDUCE METHOD
+// let arr1 = [2,3,4,6,8]
+// let arr2 = arr1.map((CurElem) => CurElem*2).filter((CurElem) => CurElem > 10).reduce((accumalator,CurElem,index,arr) => { return accumalator += CurElem})
+// console.log(arr2)
 
+// ESCAPE CHARACTERS
+// let sentence = "My name is \"Naif\""
+// console.log(sentence)
 
 
 
