@@ -121,6 +121,40 @@
 // let sentence = "My name is \"Naif\""
 // console.log(sentence)
 
+// SLICE(it takes negative value) // substr(it doesn't take negative value)
+// var str = "APPLE,BANANA,PINEAPLE"
+// var newStr = str.slice(0,5)
+// console.log(newStr)
+// let myTweet = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsa, dignissimos quaerat unde porro assumenda provident exercitationem quisquam sequi ad ipsam delectus mollitia, nulla natus distinctio nemo non! Non distinctio quisquam facilis amet? Quia, nisi recusandae dolorem perferendis itaque eligendi, fuga veniam accusamus officia cupiditate numquam veritatis repudiandae saepe soluta impedit? Mollitia quaerat magni similique numquam, amet ullam animi veritatis maxime dignissimos facilis doloribus a possimus necessitatibus recusandae deserunt earum maiores libero quidem placeat iste. Id hic laudantium libero tempora nam culpa vel cumque quam iusto nemo, mollitia ad sapiente quisquam sed quis dicta soluta harum, assumenda reprehenderit. Minima expedita deleniti tenetur error aliquam ab omnis magni. Harum ut velit praesentium commodi laborum itaque ipsam ratione tenetur voluptatem neque accusamus cupiditate quae exercitationem."
+// let myActualTweet = myTweet.slice(0,280)
+// console.log(myTweet.length)
+
+// Replace
+// let MyBioData = "my name is naif"
+// let repData = MyBioData.replace("naif","Naif")
+// console.log(repData)
+
+// UPPERCASE/LOWERCASE
+// var Fname = "Naif Ibrahim"
+// console.log(Fname.toUpperCase())
+// console.log(Fname.toLowerCase())
+
+// Trim()
+// var Fname = "   Naif Ibrahim   "
+// console.log(Fname.trim())
+
+// Split /converting into array
+// var txt = "a,b,c,d,e"
+// console.log(txt.split(",")) // slpit on commas
+
+// Date & Time 
+// var CurrDate_Time = new Date
+// console.log(CurrDate_Time)
+// console.log(CurrDate_Time.toLocaleString())
+// console.log(CurrDate_Time.toString())
+// console.log(Date.now())
+// var d = new Date (1695311417291)
+// console.log(d.toLocaleString())
 
 
 
