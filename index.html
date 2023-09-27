@@ -32,6 +32,32 @@
     <!-- <button onclick="alert('Hello')">Hello</button> -->
     <!-- <button onclick="callingFunction()">Hello</button> -->
     <!-- <button id="byID">Hello</button> -->
+    <p id="Events" onmousedown="mousedown()" onmouseup="mouseup()">Lorem ipsum dolor sit amet consectetur adipisicing el it. Alias, doloribus! Exercitationem laborum consequuntur accusamus repellat animi consectetur dicta obcaecati eum?</p>
+
+    <div id="main-div">
+        <div id="box" style="height: 50px; width: 50px; background-color: yellow;">
+        </div>
+    </div>
+
+
+    <div class="main-div-2">
+        <div>
+           <p>Want to know my name?</p>
+           <p id="showName"></p>
+           <br>
+           <button id="btn">Click Here</button>
+        </div>
+     </div>
+    <br> 
+
+     <button onclick="myVar = setTimeout(myFunction,2000)">Try(Alert shows in 2 seconds)</button>
+     <button onclick="clearTimeout(myVar)">Stop Alert</button>
+    
+    
+    <p id="p">can you stop me when i reach at 5?</p>
+    <button id="btn-2">Start</button>
+    <button id="btn-3">Stop</button>
+
      <script>
         // const callingFunction = function (){
         //  alert("hello")
@@ -46,6 +72,57 @@
         // fouthWay.addEventListener('click',() => {
         //   console.log("Hello World");
         // })
+        // function mouseup (){
+        //     document.getElementById('Events').style.color = "red";
+        // }
+        // function mousedown (){
+        //     document.getElementById('Events').style.color = "blue";
+        // }
+        const mEnter = document.getElementById('box');
+        mEnter.addEventListener('mouseenter', () =>{
+            mEnter.style.backgroundColor = 'red';
+        });
+        mEnter.addEventListener('mouseleave', () =>{
+            mEnter.style.backgroundColor = 'blue';
+        });
+        
+
+        const showmyName = document.querySelector('#showName');
+        const btn2 = document.querySelector('#btn');
+
+        const showName = () => {
+            showmyName.innerHTML=('Loading...')
+          setTimeout(( )=> {
+            showmyName.innerHTML = ("Naif Ibrahim");
+          },1000)
+        };
+        btn2.addEventListener('click', showName)
+
+
+        function myFunction() {
+          alert("HELLO WORLD")
+        };
+
+
+     const stopnum = document.querySelector('#p');
+     const btn = document.querySelector('#btn-2');
+     const stopInterval = document.querySelector('#btn-3')
+     let timeref;
+     let num = 0;
+
+     const showmynum = () => {
+     stopnum.innerHTML = 'Loading...';
+     timeref = setInterval(() => {
+     stopnum.innerHTML = `${num}`;
+     num++;
+    }, 1000);
+  };
+
+  btn.addEventListener('click', showmynum);
+
+  stopInterval.addEventListener('click',() => {
+    clearInterval(timeref);
+  })
      </script>
 </body>
 </html>
