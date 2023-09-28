@@ -185,3 +185,145 @@
 // console.log(Math.trunc(4.7))----------------------   
 // console.log(Math.trunc(-5.8)) /GIVES INTEGER PART OF A NUMBER
 // console.log(Math.trunc(-10.11))-------------------
+
+// OBJECTS And THIS
+// let bioData = {
+//     myName : {
+//         Name : "Naif",
+//         fatherName : "Ibrahim",
+//      },
+//      myAge : 20,
+//      myData (){
+//         console.log(`my name is ${this.myName.Name} and my age is ${this.myAge}`);
+//      }
+// }
+// bioData.myData();
+
+// ARRAY DESTRUCTURING
+// let myName = ['Naif','Ibrahim',20]
+// let [myFirstName,myFatherName,Age] = myName
+// console.log(myFirstName+myFatherName+Age)
+
+// OBJECT DESTRUCTURING
+// let bioData = {
+//          myFirstName : "Naif",
+//          myFatherName : "Ibrahim",
+//          Age : 20,
+//           }
+//     let {myFirstName,myFatherName,Age} = bioData
+//     console.log(myFirstName+myFatherName+Age)
+
+// ADDING DYNAMIC VALUES IN OBJECTS
+// let myName = "NAIF";
+// const myBioData = {
+//    [myName] : "Hello! How are you?",
+//    [15+5] : "is my age"
+// }
+// console.log(myBioData)
+
+// let myName = "NAIF";
+// let myAge = 20
+// const myBioData = {
+//    myName,
+//    myAge
+// }
+// console.log(myBioData)
+
+// REST OPERATOR
+// let colours = ["red","green","yellow",'pink']
+// let myFavColours = [...colours,"black","blue"]
+// console.log(myFavColours)
+
+// // INCLUDES
+// const isPresent = colours.includes("red")
+// console.log(isPresent)
+
+// EXPONENTIAL OPERATOR **
+// console.log(2**4)
+
+// PADDING START/PADDING END
+// let Myname = "Naif".padStart(5)
+// console.log(Myname)
+// let Myname = "Naif".padEnd(5)
+// console.log(Myname)
+
+// OBJECT.VALUES/OBJECT.ENTRIES
+// const person = {
+//     name : "naif",
+//     age : 20,
+// }
+// console.log(Object.values(person))
+// console.log(Object.entries(person))
+
+// REST OPERATORS IN OBJECTS
+// let person = {
+//     name : "naif",
+//     age : 20,
+//     degree : "BA"
+// }
+// let sPerson = {...person}
+// console.log(person)
+// console.log(sPerson)
+
+
+// FLAT METHOD
+// const arr = [['zone1', 'zone2'],
+//             ['zone3', 'zone4'],
+//             ['zone5', 'zone6'],
+//             ['zone7', 'zone8'],
+//             ['zone9', ['zone10','zone11']]
+//         ];
+// console.log(arr.flat())
+
+// const arr2 = [['zone1', 'zone2'],
+//             ['zone3', 'zone4'],
+//             ['zone5', 'zone6'],
+//             ['zone7', 'zone8'],
+//             ['zone9', ['zone10','zone11']]
+//         ];
+// console.log(arr2.flat(Infinity))
+
+// FROM ENTRIES  *RETURNS OBJECT*
+// const person = {
+//     name : "naif",
+//     age : 20,
+// }
+// const objArr = (Object.entries(person))
+// console.log(Object.fromEntries(objArr))
+
+// BIGINT
+// let lastNum = Number.MAX_SAFE_INTEGER
+// console.log(lastNum)
+// const newNum = 9007199254740991n + 12n
+// console.log(newNum)
+// console.log(typeof newNum)
+
+// STRICT MODE
+// x = 3.14
+// console.log(x)
+// "use strict";
+// let x = 3.14
+// console.log(x)
+
+// HIGH ORDER *function which takes a function as a argument is HIGH ORDER FUNCTION*
+// CALL BACK FUNCTION *function who is passed as an argument is CALL BACK FUNCTION*
+// const add = (a,b) => {
+//     return a+b;
+// }
+// const sub = (a,b) => {
+//     return Math.abs(a-b);
+// }
+// const mult = (a,b) => {
+//     return a*b;
+// }
+// const calculator = (num1,num2,operator) => {
+//     return operator(num1,num2)
+// }
+// calculator(5,2,add)
+// console.log(calculator(5,2,add))
+// console.log(calculator(5,2,sub))
+// console.log(calculator(5,2,mult))
+
+
+
+
