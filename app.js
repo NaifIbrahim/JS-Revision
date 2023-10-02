@@ -324,6 +324,78 @@
 // console.log(calculator(5,2,sub))
 // console.log(calculator(5,2,mult))
 
+// LEXICAL SCOPE
+// let a = "Hello Guys" 
+// const first = () => {
+//     let b = "How are you?"
+
+//   const second = () => {
+//       let  c = "I am fine.";
+//       console.log(a+b+c) 
+// }
+// second()
+// console.log(a+b+c)
+// }
+// first()
 
 
+// CLOSURE
+// const outerFun = (a) => {
+//     let b = 10
+//     const innerFuc = () => {
+//         let sum = a+b
+//         console.log(`the sun of two numbers is ${sum}`);
+//     }
+//     innerFuc();
+// }
+// outerFun(5);
 
+// ASYNCHRONOUS JS PROG
+// const fun2 = () => {
+//     setTimeout(() =>{
+//         console.log('function 2 is called')
+//     },2000)}
+// const fun1 = () => {
+//     console.log('func1tion 1 is called')
+//     fun2();
+//     console.log('function 1 is called again')
+// }
+// fun1()
+
+// SYNCHRONOUS JS PROG
+// const fun2 = () => { 
+//         console.log('function 2 is called')
+//     }
+// const fun1 = () => {
+//     console.log('func1tion 1 is called')
+//     fun2();
+//     console.log('function 1 is called again')
+// }
+// fun1()
+
+// FUNCTION CURRYING
+// function sum (num1) {
+//      return function (num2) {
+//      return function (num3) {
+//         console.log(num1+num2+num3);
+//     }
+//   }
+// }
+// sum(5)(3)(8)
+// const sum = (num1) => (num2) => (num3) => console.log(num1+num2+num3);
+// sum(5)(3)(8)
+
+// JSON.stringify **converting object into string
+var my_object = {
+  key1 : 'some text',
+  key2 : 'True',
+  key3 : 5,
+};
+var object_as_string = JSON.stringify(my_object);
+console.log(object_as_string);
+console.log(typeof(object_as_string))
+
+// JSON.parse **converting string into object
+var object_as_string_as_object = JSON.parse(object_as_string);
+console.log(object_as_string_as_object)
+console.log(typeof(object_as_string_as_object))
